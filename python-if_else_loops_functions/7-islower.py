@@ -1,2 +1,6 @@
+#!/usr/bin/python3
 def islower(c):
-    return ord('a') <= ord(c) <= ord('z')
+    unicode = ord(c)
+    if unicode >= 97 and unicode <= 122:
+        return True
+    return False
