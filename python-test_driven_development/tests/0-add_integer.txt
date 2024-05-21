@@ -1,0 +1,21 @@
+Description: Testing the add_integer function
+
+# Test Case 1: Testing with two integers
+Input: 5, 3
+Expected Output: 8
+
+# Test Case 2: Testing with a float and an integer
+Input: 5.5, 3
+Expected Output: 8
+
+# Test Case 3: Testing with two floats
+Input: 5.5, 3.3
+Expected Output: 8
+
+# Test Case 4: Testing with non-integer or non-float input (should raise TypeError)
+Input: non-integer-or-float, 3
+Expected Output: TypeError
+
+# Test Case 5: Testing with non-integer or non-float input for both arguments (should raise TypeError)
+Input: characters, abcd
+Expected Output: TypeError 
