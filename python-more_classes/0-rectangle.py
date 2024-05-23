@@ -3,4 +3,7 @@
 
 
 class Rectangle:
+    """
+    This class define a rectangle
+    """
     pass
