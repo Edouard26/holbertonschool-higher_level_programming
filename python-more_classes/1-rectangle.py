@@ -30,9 +30,6 @@ class Rectangle:
 
         Args:
             value (int): The width value to set
-        Raises:
-            TypeError: If width is not an integer
-            Value Error: If width is less than 0
         """
     if not isinstance(value, int):
         raise TypeError("width must be an integer")
@@ -52,9 +49,6 @@ class Rectangle:
 
         Args:
             value (int): The height value to set
-        Raises:
-            TypeError: If height is not an integer
-            ValueError: If height is less than 0
         """
     if not isinstance(value, int):
         raise TypeError("height must be an integer")
