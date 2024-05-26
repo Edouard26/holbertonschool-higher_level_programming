@@ -1,0 +1,21 @@
+# Test cases for the say_my_name function
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Test case 1: First name and last name provided
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+# Test case 2: First name and last name provided
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+# Test case 3: Only first name provided
+>>> say_my_name("Bob")
+My name is Bob
+
+# Test case 4: Incorrect input - First name is not a string
+>>> try:
+...     say_my_name(12, "White")
+... except Exception as e:
+...     print(e)
+first_name must be a string
