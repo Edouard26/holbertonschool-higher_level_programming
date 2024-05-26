@@ -11,11 +11,9 @@
 ...     add_integer(4, "School")
 ... except Exception as e:
 ...     print(e)
-...
 b must be an integer
 >>> try:
 ...     add_integer(None)
 ... except Exception as e:
 ...     print(e)
-...
 a must be an integer
