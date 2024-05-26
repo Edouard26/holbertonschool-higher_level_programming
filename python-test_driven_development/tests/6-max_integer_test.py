@@ -2,7 +2,7 @@
 """Unittests for max_integer(list=[])
 """
 import unittest
-from 6-max_integer import max_integer
+from . import max_integer
 
 class TestMaxInteger(unittest.TestCase):
     def test_regular_lists(self):
