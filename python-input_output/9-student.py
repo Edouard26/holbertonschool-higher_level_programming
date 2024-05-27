@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+    File class for Student
+"""
+
+
+class Student
     """
     Class representing a student.
     """
