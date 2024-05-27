@@ -10,7 +10,7 @@ load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 if __name__ == "__main__":
     try:
         _list = load_from_json_file("add_item.json")
-    execpt Exception:
+    except Exception:
         _list = []
     if len(sys.argv) > 1:
         for i in range(1, len(sys.argv)):
