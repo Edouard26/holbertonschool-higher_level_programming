@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    File class for Student
+File class for Student
 """
 
 
@@ -8,7 +8,6 @@ class Student:
     """
     Class representing a student.
     """
-
 
     def __init__(self, first_name, last_name, age):
         """
@@ -23,11 +22,8 @@ class Student:
         Retrieves a dictionary representation of a Student instance
         """
         json_dict = {
-                'first_name': self.first_nae,
-                'last_name': self.last_name,
-                'age': self.age
+            'first_name': self.first_name,
+            'last_name': self.last_name,
+            'age': self.age
         }
         return json_dict
-
-
-
