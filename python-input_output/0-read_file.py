@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
-    writes a string to a text file
+    function to read a text file
 """
 
 
 def read_file(filename=""):
     """
-        function that read a file using with
+        Reads a text file (UTF8) and prints it to stdout.
+        Arguments:
+            filename (str): File to open.
     """
-
-    with open(filename, 'r', encoding='utf-8') as file:
-        content = file.read()
-        print(content)
+    with open(filename, encoding="utf-8") as f:
+        for line in f:
+            print(line, end="")
