@@ -4,7 +4,7 @@
 """
 
 
-class Student
+class Student:
     """
     Class representing a student.
     """
