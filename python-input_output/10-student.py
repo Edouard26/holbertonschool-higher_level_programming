@@ -18,15 +18,14 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-    """
-    Initializes  dictionnary representation of student instance
-    """
-    if attrs is None:
-        return self.__dict__.copy()
-    else:
-        json_dict = {}
-        for attr in attrs:
-            if hasattr(self, attr):
-                json_dict[attr] = getattr(self, attr)
-
-        return json_dict
+        """
+        Returns a dictionary representation of a student instance.
+        """
+        if attrs is None:
+            return self.__dict__.copy()
+        else:
+            json_dict = {}
+            for attr in attrs:
+                if hasattr(self, attr):
+                    json_dict[attr] = getattr(self, attr)
+            return json_dict
