@@ -10,6 +10,7 @@ def serialize_and_save_to_file(data, filename):
     """
     with open(filename, 'w') as json_file:
         json.dump(data, json_file, indent=4)
+
 def load_and_deserialize(filename):
     """
     Load and deserialize data from a JSON file to a Python dictionary.
