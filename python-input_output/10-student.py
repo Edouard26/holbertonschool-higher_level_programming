@@ -21,12 +21,12 @@ class Student:
     """
     Initializes  dictionnary representation of student instance
     """
-    json_dict = {}
     if attrs is None:
-        json_dict = self.__dict__.copy
+        return self.__dict__.copy()
     else:
+        json_dict = {}
         for attr in attrs:
             if hasattr(self, attr):
                 json_dict[attr] = getattr(self, attr)
 
-            return json_dict
+        return json_dict
