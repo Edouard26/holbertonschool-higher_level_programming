@@ -20,7 +20,7 @@ class Student:
     def to_json(self, attrs=None):
         """
         Returns a dictionary representation of a student instance.
-        If attrs is a list of strings, only those attributes are included in the dictionary.
+        If attrs is a list of strings only attributes are included in the dict
         Otherwise, all attributes are included.
         """
         if attrs is None:
@@ -34,8 +34,7 @@ class Student:
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student instance with those in the json dictionary.
+        Replaces attributes of Student instance with those in json dict
         """
         for key, value in json.items():
             setattr(self, key, value)
-
