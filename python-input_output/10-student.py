@@ -23,7 +23,7 @@ class Student:
     """
     json_dict = {}
     if attrs is None:
-        json_dict = self.__dict__
+        json_dict = self.__dict__.copy()
     else:
         for attr in attrs:
             if hasattr(self, attr):
