@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import json
 
 def serialize_and_save_to_file(data, filename):
@@ -9,7 +12,7 @@ def serialize_and_save_to_file(data, filename):
     :param filename: The filename of the output JSON file
     """
     with open(filename, 'w') as json_file:
-        json.dump(data, json_file, indent=4)
+        json.dump(data, json_file)
 
 def load_and_deserialize(filename):
     """
