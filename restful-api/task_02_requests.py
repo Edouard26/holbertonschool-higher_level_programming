@@ -17,7 +17,7 @@ def fetch_and_save_posts():
 
     if response.status_code == 200:
         posts = response.json()        
-        posts_data = [{'id': post['id'], 'title': post['title'], 'body': post['body']} for post in posts]        
+        posts_data = [{'id': post['id'], 'title': post['title'], 'body': post['body']} for post in posts] 
 
         headers = ['id', 'title', 'body']        
 
@@ -25,4 +25,7 @@ def fetch_and_save_posts():
             writer = csv.DictWriter(csvfile, fieldnames=headers)
             writer.writeheader()
             writer.writerows(posts_data)
-
+    
+if __name__ == '__main__':
+fetch_and_print_posts()
+fetch_and_save_posts()
