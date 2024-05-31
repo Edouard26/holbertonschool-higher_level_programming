@@ -40,7 +40,7 @@ class SimpleRequestHandler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
 
-    httpd = HTTPServer((HOSTNAME, PORT), Server)
+    httpd = HTTPServer((HOSTNAME, PORT), SimpleRequestHandler)
 
     print(f'Starting server on port 8000...')
     server.serve_forever()
