@@ -1,8 +1,12 @@
-import http.server
+#!/usr/bin/python3
+from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
+HOSTNAME = "localhost"
+PORT = 8000
 
-class SimpleRequestHandler(http.server.BaseHTTPRequestHandler):
+
+class SimpleRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/data':
             data = {
