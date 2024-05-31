@@ -6,8 +6,8 @@ class SimpleRequestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/data':
             data = {
-                'name': 'John'
-                'age': '30'
+                'name': 'John',
+                'age': '30',
                 'city': 'New York'
             }
 
