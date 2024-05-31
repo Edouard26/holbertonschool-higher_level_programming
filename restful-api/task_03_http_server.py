@@ -26,22 +26,21 @@ class SimpleRequestHandler(BaseHTTPRequestHandler):
         elif self.path == '/status':
 
             self.send_response(200)
-            self.send_header('Content-type', 'text/plain')
+            self.send_header('Content-type', 'application/json')
             self.end_headers()
             self.wfile.write(b'OK')
 
         else:
 
             self.send_response(404)
-            self.send_header('Content-type', 'text/plain')
+            self.send_header('Content-type', 'application/json')
             self.end_headers()
             self.wfile.write(b'Endpoint not found')
 
 
 if __name__ == '__main__':
 
-    server_adress = ('', 8000)
-    httpd = http.server.HTTPServer(server_address, SimpleHTTPRequestHandler)
+    httpd = HTTPServer((HOSTNAME, PORT), Server)
 
-    print('Starting server on port 8000...')
-    httpd.serve_forever()
+    print(f'Starting server on port 8000...')
+    server.serve_forever()
