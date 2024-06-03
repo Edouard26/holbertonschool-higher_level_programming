@@ -1,1 +1,1 @@
-Welcome to Docker!
+echo "Welcome to Docker!" > config.txt
