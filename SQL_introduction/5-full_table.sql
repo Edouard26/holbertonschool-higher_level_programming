@@ -1,0 +1,6 @@
+-- 3 first students in the Batch ID=3
+-- because Batch 3 is the best!
+SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, IS_NULLABLE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = :dbname
+AND TABLE_NAME = 'first_table';
