@@ -1,5 +1,6 @@
--- Create the database and tables if they do not exist
---Create the table states and cities
+-- 3 first students in the Batch ID=3
+-- because Batch 3 is the best!
+
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 USE hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS states (
