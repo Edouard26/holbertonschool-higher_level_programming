@@ -1,6 +1,4 @@
 -- Should display title - genre.id both in ASC order
--- if a show has no genre display NULL
-
 SELECT tv_shows.title, tv_show_genres.genre_id
 FROM tv_shows
 LEFT JOIN tv_show_genres
