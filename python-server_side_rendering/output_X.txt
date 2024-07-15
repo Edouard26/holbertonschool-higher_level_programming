@@ -1,4 +1,4 @@
-    for index, attendee in enumerate(attendees, start=1):
+ for index, attendee in enumerate(attendees, start=1):
         # Use DefaultDict to handle missing data
         safe_attendee = DefaultDict(lambda: "N/A", attendee)
         
